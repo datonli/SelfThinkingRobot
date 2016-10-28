@@ -1,0 +1,22 @@
+bin
+build
+dist
+include
+lib
+venv
+*.pyc
+*.swp
+*.egg-info
+
+# Database files
+*.sqlite3
+*.db
+
+# Sphinx docs
+docs/_build/
+
+# IntelliJ
+.idea
+*.iml
+
+examples/settings.py
