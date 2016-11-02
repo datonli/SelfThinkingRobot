@@ -69,7 +69,7 @@ class WCrawler:
             exit(1)
         self.headers['Cookie'] = cookie
 
-    def crawl(self, url='http://weibo.cn/yaochen'):
+    def crawl(self, url='http://weibo.cn/luyi'):
         self.data = {'url': '', \
                     'nickname': '', \
                     'verify_type': '', \
