@@ -1,7 +1,5 @@
 # sina-weibo-crawler
 
-[![Build Status](https://travis-ci.org/intfloat/sina-weibo-crawler.svg)](https://travis-ci.org/intfloat/sina-weibo-crawler)
-
 ## 抽取数据段
 
 | 段域 | 数据类型 | 含义 | 附加说明 |

@@ -105,7 +105,7 @@ class WCrawler:
         info_url = self.__parse_info_url(soup)
         fans_url, follow_url = self.__parse_fans_and_follow_url(soup)
         # page by page
-        for i in xrange(2, 1 + n_page):
+        for i in range(2, 1 + n_page):
             if i > self.max_num_page or len(self.data['weibo']) >= self.max_num_weibo:
                 break
             turl = self.data['url'] + '?page=' + str(i)
@@ -179,7 +179,7 @@ class WCrawler:
     def __parse_info_list(self, soup):
         arr = soup.find_all('div')
         table = None
-        for i in xrange(len(arr)):
+        for i in range(len(arr)):
             if arr[i]['class'][0] == 'tip' and arr[i].get_text() == u'基本信息':
                 assert(i + 1 < len(arr))
                 table = arr[i + 1]
@@ -191,6 +191,8 @@ class WCrawler:
             except:
                 pass
             pos = c.find(':')
+            if None == pos:
+                continue
             if pos < 0 or pos + 1 == len(c):
                 try:
                     pos = c.find(u'：')

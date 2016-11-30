@@ -11,5 +11,5 @@ if __name__ == '__main__':
     luyi_data = crawler.crawl(url = 'http://weibo.cn/luyi')
     db = Database("luyi_data.db")
     db.data(key = "luyi_data", value = luyi_data)
-    /* TODO: Font support for Chinese */
-    print db.data(key = "luyi_data")
+    ''' TODO: Font support for Chinese '''
+    print(db.data(key = "luyi_data"))
