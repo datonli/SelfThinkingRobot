@@ -1,4 +1,6 @@
-from chatterbot import ChatBot
+import sys
+sys.path.append("..")
+from chatterbot.chatterbot import ChatBot
 
 # Create a new chat bot named Charlie
 chatbot = ChatBot("Charlie")

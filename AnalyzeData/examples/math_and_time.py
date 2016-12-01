@@ -1,5 +1,6 @@
-from chatterbot import ChatBot
-
+import sys
+sys.path.append("..")
+from chatterbot.chatterbot import ChatBot
 
 bot = ChatBot(
     "Math & Time Bot",

@@ -1,3 +1,5 @@
+import sys
+sys.path.append("..")
 from .base_case import ChatBotTestCase
 from chatterbot.conversation import Statement, Response
 

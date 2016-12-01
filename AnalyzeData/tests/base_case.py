@@ -1,8 +1,9 @@
+import sys
+sys.path.append("..")
 from unittest import TestCase
 from unittest import SkipTest
 from chatterbot import ChatBot
 import os
-
 
 class ChatBotTestCase(TestCase):
 

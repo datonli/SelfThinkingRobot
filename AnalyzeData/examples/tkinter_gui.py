@@ -7,7 +7,9 @@ except ImportError:
     import tkinter.scrolledtext as ScrolledText
 import time
 
-from chatterbot import ChatBot
+import sys
+sys.path.append("..")
+from chatterbot.chatterbot import ChatBot
 
 class TkinterGUIExample(tk.Tk):
 
