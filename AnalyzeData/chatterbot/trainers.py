@@ -311,7 +311,7 @@ class UbuntuCorpusTrainer(Trainer):
         # Download and extract the Ubuntu dialog corpus
         corpus_download_path = self.download(self.data_download_url)
 
-        self.extract(corpus_download_path)
+        # self.extract(corpus_download_path)
 
         extracted_corpus_path = os.path.join(
             self.data_directory,

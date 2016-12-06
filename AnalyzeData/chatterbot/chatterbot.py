@@ -69,6 +69,7 @@ class ChatBot(object):
 
         # Use specified trainer or fall back to the default
         trainer = kwargs.get('trainer', 'chatterbot.trainers.Trainer')
+        print('trainer : ', trainer)
         TrainerClass = import_module(trainer)
         self.trainer = TrainerClass(self.storage)
 
